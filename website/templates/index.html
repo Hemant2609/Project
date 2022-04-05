@@ -1,0 +1,130 @@
+{% extends "base.html" %} 
+{% block content %} 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel ="stylesheet" href="static/css/styles.css"/>
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
+    <link rel ="icon" href="data:,">
+  </head>
+  <body>  
+    
+
+    <section id = "banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="banner_title"> ENTRANCE EXAM MODULE</p>
+            <p> Enroll for hhe Exam</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="static/images/banner_image.png" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <sectrion id="courses">
+      <div class="container text-center">
+        <h1 class="title"> Enroll for the follwing Courses</h1> 
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="static/images/fullstack.jpg" class="courses_img">
+            <h4>Full Stack</h4>
+            <p>Full stack knowledge</p>
+          </div>
+          <div class="col-md-4">
+            <img src="static/images/python.jpg" class="courses_img">
+            <h4>Python Backend</h4>
+            <p>Full stack knowledge</p>
+          </div>
+          <div class="col-md-4">
+            <img src="static/images/java.jpg" class="courses_img">
+            <p>Full stack knowledge</p>
+            <h4>Java Fullstack</h4>
+            <p>Full stack knowledge</p>
+          </div>
+        </div>
+        <a href="/exam_reg">
+        <button type="button" class="btn btn-primary">Register for Courses</button>
+        </a>
+      </div>
+
+    </section>
+
+    <section id="about_us">
+      <div class="container">
+        <h1 class="title text-center">Who Are WE?</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="about_title"> Our Mission<p>
+              <ul>
+                <li>We want to speed up engineers career </li>
+                <li>We want to speed up engineers career </li>
+                <li>We want to speed up engineers career </li>
+                <li>We want to speed up engineers career </li>
+                <li>We want to speed up engineers career </li>
+                <li>We want to speed up engineers career </li>
+              </ul>
+          
+          </div>
+          <div class="col-md-6">
+            <img src="static/images/network.png" class="image-fluid"
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="social-media">
+      <div class="container text-center">
+        <p>FIND US ON SOCIAL MEDIA</p>
+        <div class="social-icons">
+          <a href="#"><img src="static/images/facebook-icon.png"></a>
+          <a href="#"><img src="static/images/instagram-icon.png"></a>
+          <a href="#"><img src="static/images/linkedin-icon.png"></a>
+          <a href="#"><img src="static/images/twitter-icon.png"></a>
+          <a href="#"><img src="static/images/whatsapp-icon.png"></a>
+
+        </div>
+      </div>
+    </section>
+    
+
+  
+
+
+
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  
+</body>
+</html>
+{% endblock %}

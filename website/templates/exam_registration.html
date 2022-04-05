@@ -1,0 +1,217 @@
+{% extends "base.html" %} 
+{% block content %} 
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel ="stylesheet" href="static/css/styles.css"/>
+    <link rel ="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"/>
+    <link rel ="icon" href="data:,">
+  </head>
+  <body>
+        <section id = "criteria">
+            <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+                    <p class="criteria_title">ELIGIBILITY CRITERIA</p>
+                    <p> Enroll for hhe Exam</p>
+                    <p> Enroll for hhe Exam</p>
+                    <p> Enroll for hhe Exam</p>
+                    <p> Enroll for hhe Exam</p>
+                    <p> Enroll for hhe Exam</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="static/images/banner_image.png" class="img-fluid">
+                </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="form_">
+            <div class="container">
+                <form method="POST">
+                  <h3 align="center">Register</h3>
+                  <div class="form_group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Enter Full Name"
+                      
+                    />
+                  </div><br>
+                  <div class="form_group">
+                    <label for="email">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Enter E-mail"
+                    />
+                  </div><br>
+                  <div class="form_group">
+                    <label for="pri_number">Primary Contact NO.</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="pri_number"
+                      name="pri_number"
+                      placeholder="Enter Primary Number"
+                    />
+                  </div><br>
+                  <div class="form_group">
+                    <label for="sec_number">Secondary Contact No.</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="sec_number"
+                      name="sec_number"
+                      placeholder="Enter Secondary Number"
+                    />
+                  </div><br>
+                  <div class="form_group">
+                    <label for="coll_name">College Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="coll_name"
+                      name="coll_name"
+                      placeholder="Enter College Name"
+                    />
+                  </div><br>
+                  <div class="form_group">
+                    <label for="uni_name">University Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="uni_name"
+                      name="uni_name"
+                      placeholder="Enter University Name"
+                    />
+                  </div><br>
+                  <div class= "form_group">
+                    <div class="radio">
+                      <p>Select your Branch/Stream</p>
+                      <label for="bsccs">Bachelor of Science Computer Science(B.Sc CS) 
+                      <input
+                        type="radio"
+                        class="form-control"
+                        id="bsccs"
+                        name="degree"
+                        value="Bachelor of Science Computer Science(B.Sc CS)"
+                      >
+                      </label><br>
+                      <label for="bscit">Bachelor of Science Information Technology(B.Sc IT
+                      <input
+                        type="radio"
+                        class="form-control"
+                        id="bscit"
+                        name="degree"
+                      >
+                      </label><br>
+                      <label for="be">Bachelor of Engineering(B.E)
+                      <input
+                        type="radio"
+                        class="form-control"
+                        id="be"
+                        name="degree"
+                        value="Bachelor of Science Information Technology(B.Sc IT)"
+                      >
+                      </label><br>
+                      <label for="btech">Bachelor of Technology(B.TECH) 
+                      <input
+                        type="radio"
+                        class="form-control"
+                        id="btech"
+                        name="degree"
+                        value="Bachelor of Engineering(B.E)"
+                      > 
+                      </label><br>
+                    </div><br>
+                  </div>
+
+                  <div class="form_group">
+                    <label for="pointer">Aggregate Pointer(CGPA)</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="pointer"
+                      name="pointer"
+                      placeholder="Enter Aggregate Pointer"
+                    />
+                  </div><br>
+                  <div class="form_group">
+                    <label for="sem">Semester & Year</label>
+                    <select name="sem" id="sem">
+                      <option value="5sem">5th Sem</option>
+                      <option value="6sem">6th Sem</option>
+                      <option value="7sem">7th Sem</option>
+                      <option value="8sem">8th Sem</option>
+                      <option value="Last sem & year">Last Sem & Year</option>
+                    </select>
+                  </div><br>
+                  <div class="form_group">
+                    <label for="kt">Do you have any live ATKT(backlog)?</label>
+                    <select name="kt" id="kt">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4 or more than 4</option>
+                      <option value="nokt">No ATKT </option>
+                    </select>
+                  </div><br>
+
+                  <div class="form_group">
+                    <label for="experience">Previous Professional Experience</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="experience"
+                      name="experience"
+                      placeholder="Enter Previous Professional Experience"
+                    />
+                  </div><br>
+                  <div class="form_group">
+                    <label for="city">Current Location</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="city"
+                      name="city"
+                      placeholder="Enter Current Residence City"
+                    />
+                  </div><br>
+                  <div class="form_group">
+                    <label for="course">Select the course which you have to Join</label>
+                    <select name="course" id="course">
+                      <option value="fullstack">Full Stack Development</option>
+                      <option value="python">Backend With Python</option>
+                      <option value="java">JAVA Full Stack</option>
+                    </select>
+                  </div><br>
+
+
+                  <br />
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+
+  </body>
+  
+</html>
+{% endblock %}
